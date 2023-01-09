@@ -7,5 +7,5 @@
 <li>Pressure</n/li>
 <p>This updates the values on a user defined interval in:</p>
 <li>Displayed Value</li>
-<li>High and Low Tables</li>
+<li>High and Low Table values</li>
 <li>Corresponding Graphs</li>

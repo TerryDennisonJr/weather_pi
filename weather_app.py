@@ -3,8 +3,6 @@
 # 12/24/2022
 # Last update: 12/24/2022
 
-# notes for tables; need tablulate module; pip install tabulate
-
 # sites for needed modules:
 # numpy and pandas:https://numpy.org/devdocs/user/troubleshooting-importerror.html
 # ImageTk:https://github.com/Skiller9090/Lucifer/issues/45:sudo apt-get install python3-pil python3-pil.imagetk

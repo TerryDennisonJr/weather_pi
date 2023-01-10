@@ -36,18 +36,6 @@ ttk.Label(frm, text="Pressure", font=("courier", 30, ['bold', 'underline'])).gri
     row=0, column=2, padx=150, pady=10)
 
 
-#################################################################
-# sense = SenseHat()
-# sense.clear()
-
-
-# while True:
-#   temp= sense.get_temperature()
-#   print(temp)
-#   time.sleep(5)
-
-##############################################################
-
 # Local variables to hold data in labels
 temp_val, humi_val, press_val = 13, 28, 810
 

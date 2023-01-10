@@ -143,7 +143,8 @@ def graph_timer():
     press_data = press_data[['Cumulative Pressure']]
     press_data.plot(kind='line', ax=ax3,
                     title="Cumulative Pressure", color='purple', legend=False)
-    # Updates data in graps in miliseconds
+   
+    # Updates data in graphs in miliseconds
     main.after(1000, graph_timer)
     temp_canvas.draw()
     humi_canvas.draw()
@@ -152,7 +153,5 @@ def graph_timer():
 
 graph_timer()
 
-
 # Displays main GUI
-
 main.mainloop(

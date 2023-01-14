@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
 # td_weather_pi app
 # 12/24/2022
-# Last update: 12/24/2022
+# Last update: 1/14/2023
+
+# notes for tables; need tablulate module; pip install tabulate
 
 # sites for needed modules:
 # numpy and pandas:https://numpy.org/devdocs/user/troubleshooting-importerror.html
@@ -131,8 +133,7 @@ def graph_timer():
     press_data = press_data[['Cumulative Pressure']]
     press_data.plot(kind='line', ax=ax3,
                     title="Cumulative Pressure", color='purple', legend=False)
-   
-    # Updates data in graphs in miliseconds
+    # Updates data in graps in miliseconds
     main.after(1000, graph_timer)
     temp_canvas.draw()
     humi_canvas.draw()
@@ -141,5 +142,7 @@ def graph_timer():
 
 graph_timer()
 
+
 # Displays main GUI
-main.mainloop(
+
+main.mainloop()

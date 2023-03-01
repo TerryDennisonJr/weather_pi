@@ -1,5 +1,9 @@
 !#/bin/bash
 
+user='root'
+password=''
+database='weather_database'
+
 sudo apt-get install python3-pip
 pip install mysqlclient
 

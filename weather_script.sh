@@ -15,4 +15,4 @@ sudo mysql --user=$user --execute="CREATE DATABASE $database; USE $database; CRE
 
 sudo mysql --user=$user --execute="CREATE USER 'weather_user'@'localhost' IDENTIFIED BY ''; GRANT ALL ON *.* TO 'weather_user'@'localhost'; FLUSH PRIVILEGES;"
 
-eval "$(curl -o tester.py  https://raw.githubusercontent.com/TerryDennisonJr/weather_pi/main/weather_app_mysql.py)"
+eval "$(curl -o pi_weather.py  https://raw.githubusercontent.com/TerryDennisonJr/weather_pi/main/weather_app_mysql.py)"

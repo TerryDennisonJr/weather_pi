@@ -5,7 +5,7 @@ import time
 import mysql.connector
 
 cnx = mysql.connector.connect(
-    user='root', password='Xenogears@04', database='weather_stats')
+    user='weather_user', password='', database='weather_database')
 cursor = cnx.cursor()
 
 current = datetime.now().date()

@@ -11,9 +11,10 @@ cursor = cnx.cursor()
 current = datetime.now().date()
 
 while True:
-    temp_val = random.randrange(15, 55)
-    humi_val = random.randrange(30, 40)
-    press_val = random.randrange(850, 1050)
+    
+    temp_val = int(sense.get_temperature())
+    humi_val = int(sense.get_humidity())
+    press_val = int(sense.get_pressure())
 
     print("Date", "\t\tTemperatue", "\tHumidity", "\Pressure")
     print(current, "\t", temp_val, "\t\t", humi_val, "\t\t", press_val)

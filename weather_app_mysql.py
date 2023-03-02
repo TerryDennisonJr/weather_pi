@@ -4,19 +4,20 @@ import random
 import time
 import mysql.connector
 
-cnx = mysql.connector.connect(
-    user='weather_user', password='', database='weather_database')
-cursor = cnx.cursor()
+
 
 current = datetime.now().date()
+print("Date", "\t\tTemperatue", "\tHumidity", "\tPressure")
 
 while True:
+    cnx = mysql.connector.connect(user='weather_user', password='', database='weather_database')
     
+    cursor = cnx.cursor()
     temp_val = int(sense.get_temperature())
     humi_val = int(sense.get_humidity())
     press_val = int(sense.get_pressure())
 
-    print("Date", "\t\tTemperatue", "\tHumidity", "\Pressure")
+    
     print(current, "\t", temp_val, "\t\t", humi_val, "\t\t", press_val)
 
 

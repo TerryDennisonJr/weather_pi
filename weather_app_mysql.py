@@ -20,7 +20,7 @@ while True:
     print(current, "\t", temp_val, "\t\t", humi_val, "\t\t", press_val)
 
 
-    add_weather = ("INSERT INTO weather_data "
+    add_weather = ("INSERT INTO weather_table "
                    "(date, temp, humidity, pressure) "
                    "VALUES ( %(date)s, %(temp)s, %(humidity)s, %(pressure)s)")
 

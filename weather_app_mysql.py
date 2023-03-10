@@ -3,6 +3,7 @@ from datetime import date
 import random
 import time
 import mysql.connector
+from sense_hat import SenseHat
 
 
 
